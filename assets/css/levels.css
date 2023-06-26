@@ -1,0 +1,192 @@
+/* LEVEL PAGES */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.level p {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.board-show a {
+    display: flex;
+    align-items: center;
+}
+
+.board-show p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff9900;
+    margin-left: 8px;
+}
+
+.board-show img {
+    width: 20px;
+}
+
+.level-body {
+    margin: 50px 30px 10px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 24px;
+}
+
+.card {
+    margin: 10px 10px;
+    padding: 30px 15px;
+    background-color: white;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 100px;
+    height: 150px;
+    background-color: #ff9900;
+    cursor: pointer;
+}
+
+.card img {
+    display: none;
+}
+
+.selected {
+    background-color: #ffffff;
+}
+
+.matched {
+    visibility: hidden;
+}
+
+.level-completed {
+    display: none;
+}
+
+.score-record,
+.level-rules {
+    margin: 20px 40px;
+}
+
+.score-record p {
+    font-size: 16px;
+}
+
+.score-record span {
+    color: #ff9900;
+}
+
+.level-rules h4 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 660px) {
+    .body-container {
+        width: 100%;
+        height: fit-content;
+        background: url(../images/index\ bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .index-container {
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .level-container {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 660px) {
+    .body-container {
+        width: 100%;
+        height: fit-content;
+        background: url(../images/index\ bg.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .index-container {
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .level-container {
+        padding-bottom: 60px;
+    }
+    .level-body {
+        margin: 50px 20px 20px 20px;
+    }
+    .score-record,
+    .level-rules {
+        margin: 20px 25px;
+    }
+}
+
+@media (max-width: 540px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 24px;
+    }
+    .level p {
+        font-size: 14px;
+    }
+    .board-show p {
+        font-size: 14px;
+    }
+    .board-show img {
+        width: 16px;
+    }
+    .card img {
+        width: 18px;
+    }
+    .card {
+        margin: 8px 8px;
+        padding: 0px;
+        background-color: #ff9900;
+        width: fit-content;
+        width: 80px;
+        height: 120px;
+    }
+    .selected {
+        background-color: #ffffff;
+    }
+    .level-container {
+        padding-bottom: 80px;
+    }
+    .level-body {
+        margin: 20px 14px 25px 14px;
+    }
+    .score-record,
+    .level-rules {
+        margin: 20px 20px;
+    }
+    .score-record p {
+        font-size: 14px;
+    }
+    .level-rules h4 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    .level-rules ul {
+        font-size: 14px;
+    }
+}
