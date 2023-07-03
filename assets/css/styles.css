@@ -157,6 +157,28 @@ p {
     display: none;
 }
 
+.password-toggle {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-icon {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/eye-slash-fill.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.toggle-icon.visible {
+    background-image: url('../images/eye-fill.svg');
+}
+
 
 /* MOBILE VIEW */
 
@@ -179,6 +201,9 @@ p {
     .form-main input,
     #sform-submit {
         font-size: 14px;
+    }
+    .toggle-icon {
+        right: 12px;
     }
 }
 
