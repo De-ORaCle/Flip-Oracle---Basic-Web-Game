@@ -140,10 +140,10 @@ function levelCompleted() {
                 if (currLevel <= 10) {
                     var confirmation = confirm('Level Completed! Your score is ' + score + '. Proceed to the next level?');
                     if (confirmation) {
-                        window.location.href = 'level' + (currLevel + 1) + '.html';
+                        window.location.href = 'completed.html';
                     } else {
                         // Handle the user's choice if they don't want to proceed to the next level
-                        window.location.href = 'level' + (currLevel + 1) + '.html';
+                        window.location.href = 'completed.html';
                     }
                 } else {
                     window.location.href = 'completed.html';
