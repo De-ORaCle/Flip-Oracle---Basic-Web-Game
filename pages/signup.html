@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -22,8 +25,12 @@
                         <h2>Just One Precaution</h2>
                         <p>You wouldn't want to come back here and be unable to continue from where you stopped or unable to track your high score, would you? Enter a username and password for precaution.</p>
                         <div class="form-main">
-                            <input type="text" name="flip-username" id="flip-username" placeholder="Enter a username...">
-                            <input type="password" name="flip-password" id="flip-password" placeholder="Enter a password...">
+                            <input type="text" name="flip-username" id="flip-username" placeholder="Enter a username..." required>
+                            <input type="password" name="flip-password" id="flip-password" placeholder="Enter a password..." required>
+                            <input type="text" class="invisible-input" id="score" value="0" disabled>
+                            <input type="text" class="invisible-input" id="highscore" value="0" disabled>
+                            <input type="text" class="invisible-input" id="currlevel" value="0" disabled>
+                            <input type="text" class="invisible-input" id="loginout" value="0" disabled>
                         </div>
                         <input id="sform-submit" type="submit" value="Start Playing">
                         <a href="signin.html">
@@ -35,5 +42,7 @@
         </div>
     </div>
 </body>
+
+<script src="../assets/js/signup.js"></script>
 
 </html>

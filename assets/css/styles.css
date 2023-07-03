@@ -153,6 +153,10 @@ p {
     color: #ff9900;
 }
 
+.invisible-input {
+    display: none;
+}
+
 
 /* MOBILE VIEW */
 

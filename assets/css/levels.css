@@ -92,6 +92,20 @@ header {
     margin-bottom: 8px;
 }
 
+.logout-button {
+    font-family: 'Nunito', sans-serif;
+    background-color: #ff9900;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+
+
 @media (min-width: 660px) {
     .body-container {
         width: 100%;
@@ -108,7 +122,7 @@ header {
         background-color: rgba(0, 0, 0, 0.8);
     }
     .level-container {
-        padding-bottom: 40px;
+        padding-bottom: 140px;
     }
 }
 
