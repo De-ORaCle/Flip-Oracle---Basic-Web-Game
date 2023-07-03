@@ -2,12 +2,12 @@
 
 var thisForm = document.getElementById("signin-form");
 const headers_ = {
-    'Authorization': 'Bearer pat9fDCE6KCncB10g.edd3e847a14cd147b8c97670fd6a97d6eebc5a545c020efecb684a69714ff111',
+    'Authorization': 'Bearer API/TOKEN-KEY',
     'Content-Type': 'application/json'
 };
 
-const base_id = 'appbvUD6uDfs8545m';
-const table_name = 'tblfbfFKPy0vHilSq';
+const base_id = 'BASE-ID';
+const table_name = 'TABLE-NAME/ID';
 
 // When the form is submitted...
 thisForm.addEventListener("submit", function(event) {
