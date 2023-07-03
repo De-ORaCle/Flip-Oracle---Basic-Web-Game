@@ -26,7 +26,10 @@
                         <p>You wouldn't want to come back here and be unable to continue from where you stopped or unable to track your high score, would you? Enter a username and password for precaution.</p>
                         <div class="form-main">
                             <input type="text" name="flip-username" id="flip-username" placeholder="Enter a username..." required>
-                            <input type="password" name="flip-password" id="flip-password" placeholder="Enter a password..." required>
+                            <div class="password-toggle">
+                                <input type="password" name="flip-password" id="flip-password" placeholder="Enter your password..." required>
+                                <span class="toggle-icon" onclick="togglePasswordVisibility()"></span>
+                            </div>
                             <input type="text" class="invisible-input" id="score" value="0" disabled>
                             <input type="text" class="invisible-input" id="highscore" value="0" disabled>
                             <input type="text" class="invisible-input" id="currlevel" value="0" disabled>
@@ -44,5 +47,6 @@
 </body>
 
 <script src="../assets/js/signup.js"></script>
+<script src="../assets/js/password-toggle.js"></script>
 
 </html>

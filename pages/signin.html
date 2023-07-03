@@ -26,7 +26,10 @@
                         <p>Don't let your achievements slip away—log in and continue your quest for memory mastery. The leaderboard awaits your triumphant return!</p>
                         <div class="form-main">
                             <input type="text" name="flip-username" id="flip-username" placeholder="Enter your username..." required>
-                            <input type="password" name="flip-password" id="flip-password" placeholder="Enter your password..." required>
+                            <div class="password-toggle">
+                                <input type="password" name="flip-password" id="flip-password" placeholder="Enter your password..." required>
+                                <span class="toggle-icon" onclick="togglePasswordVisibility()"></span>
+                            </div>
                         </div>
                         <input id="sform-submit" type="submit" value="Continue Playing">
                         <a href="signup.html">
@@ -40,5 +43,6 @@
 </body>
 
 <script src="../assets/js/authentication.js"></script>
+<script src="../assets/js/password-toggle.js"></script>
 
 </html>
